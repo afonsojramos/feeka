@@ -40,12 +40,34 @@ p {
 }
 
 
-#about-us {
+.container#about-us {
+    margin-bottom: 8em;
     text-align: center;
 }
 
-#about-us p {
+.container#about-us p {
     text-align: left;
     max-width: 32em;
     margin: auto;
+}
+
+.container#about-us-parts {
+    margin-top: 8em;
+    max-width: 1240px;
+}
+.container#about-us-parts .card {
+    padding: 1em;
+    border-radius: 25px 25px;
+}
+
+.container#about-us-parts .card .card-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 22px;
+    color: #481C51;
+}
+
+.container#about-us-parts .card .card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000;
 }
