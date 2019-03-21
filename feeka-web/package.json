@@ -1,0 +1,16 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Feeka's website",
+  "main": "main.js",
+  "dependencies": {
+    "sass": "^1.17.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass src/styles/*.scss src/main.css"
+  },
+  "author": "Feeka",
+  "license": "ISC"
+}
