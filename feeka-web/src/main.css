@@ -1,2 +1,51 @@
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #000;
+}
+
+.title-purple {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 58px;
+    color: #481C51;
+}
+
+.text-yellow {
+    color: #E1AE2C
+}
+
+#main-title {
+    margin-bottom: 0.5em;
+}
+
+.container { 
+    margin: 12em auto;
+}
+
+.container#company-intro {
+    max-width: 1440px;
+    text-align: center;
+}
+
+.container#company-intro img{
+    width: 100%;
+}
+
+.container#company-intro #company-paragraph {
+    max-width: 23em;
+}
+
+.container#company-intro > .row > * {
+    text-align: left;
+}
 
 
+#about-us {
+    text-align: center;
+}
+
+#about-us p {
+    text-align: left;
+    max-width: 32em;
+    margin: auto;
+}
