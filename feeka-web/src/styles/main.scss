@@ -78,6 +78,7 @@ p {
     margin: auto;
     margin-bottom: 3em;
     width: 19rem;
+    height: 100%;
 }
 
 .container#about-us-parts .card .card-title {
@@ -96,18 +97,18 @@ p {
     color: #000;
 }
 
-.container#about-us-parts .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-}
+// .container#about-us-parts .row {
+//     display: -webkit-box;
+//     display: -webkit-flex;
+//     display: -ms-flexbox;
+//     display: flex;
+//     flex-wrap: wrap;
+// }
 
-.container#about-us-parts .row > [class*='col-'] {
-    display: flex;
-    flex-direction: column;
-}
+// .container#about-us-parts .row > [class*='col-'] {
+//     display: flex;
+//     flex-direction: column;
+// }
 
 @media (min-width: 768px) {
     p {
