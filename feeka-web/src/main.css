@@ -71,11 +71,14 @@ p {
   max-width: 1240px;
 }
 
+.container#about-us-parts [class*=col-] {
+  margin-bottom: 3em;
+}
+
 .container#about-us-parts .card {
   padding: 1.5em;
   border-radius: 25px 25px;
   margin: auto;
-  margin-bottom: 3em;
   width: 19rem;
   height: 100%;
 }
