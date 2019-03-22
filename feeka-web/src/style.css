@@ -408,6 +408,41 @@ button.btn.btn-primary {
   button.btn.btn-primary:focus, button.btn.btn-primary:active {
     box-shadow: none; }
 
+.navbar {
+  padding: 1.2em 4em !important;
+  background-color: white;
+  transition: all ease-in 0.3s; }
+  .navbar.active {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+  .navbar .navbar-brand * {
+    width: 5em; }
+  .navbar li {
+    cursor: pointer; }
+    .navbar li a {
+      font-family: "Comfortaa", cursive;
+      color: #481C51 !important;
+      text-transform: lowercase;
+      font-size: 0.9em;
+      margin-left: 1.4em;
+      transition: all ease-out 0.2s;
+      font-weight: bold; }
+      .navbar li a:hover {
+        color: #E1AE2C !important; }
+    .navbar li.contact a {
+      background-color: #481C51;
+      color: white !important;
+      padding: 0.5em 2em !important;
+      border-radius: 25px 25px;
+      margin-left: 3em !important; }
+      .navbar li.contact a:hover {
+        background-color: #E1AE2C; }
+
+:target {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden; }
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
