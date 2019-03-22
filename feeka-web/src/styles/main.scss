@@ -3,8 +3,10 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
-.btn-primary {
-    color: blue;
+.btn.btn-primary {
+    background-color: #481C51;
+    border-color: #481C51;
+    border-radius: 25px 25px;
 }
 
 img {
@@ -54,3 +56,4 @@ img {
 }
 
 @import 'morphing';
+@import 'intro_about_us';
