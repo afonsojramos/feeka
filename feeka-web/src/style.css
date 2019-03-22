@@ -474,32 +474,11 @@ button.btn.btn-primary {
   padding: 0 10em;
   text-align: center; }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  color: #000; }
-
-.title-purple {
-  font-family: 'Comfortaa', sans-serif;
-  font-size: 25px;
-  color: #481C51; }
-
-.text-yellow {
-  color: #E1AE2C; }
-
 #main-title {
   margin-bottom: 0.5em; }
 
 .container {
   margin: 5em auto 1em auto; }
-
-#company-intro {
-  height: auto;
-  text-align: center;
-  padding: 2em; }
-
-#company-intro > .row > * {
-  text-align: left; }
 
 #about-us-parts [class*='col-'] {
   margin-bottom: 3em; }
