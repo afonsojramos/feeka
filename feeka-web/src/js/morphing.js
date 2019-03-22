@@ -10,9 +10,9 @@
  */
 {
 	// Helper vars and functions.
-	const extend = function(a, b) {
-		for( let key in b ) { 
-			if( b.hasOwnProperty( key ) ) {
+	const extend = function (a, b) {
+		for (let key in b) {
+			if (b.hasOwnProperty(key)) {
 				a[key] = b[key];
 			}
 		}
@@ -20,22 +20,22 @@
 	};
 
 	// from http://www.quirksmode.org/js/events_properties.html#position
-	const getMousePos = function(ev) {
+	const getMousePos = function (ev) {
 		let posx = 0;
 		let posy = 0;
 		if (!ev) ev = window.event;
-		if (ev.pageX || ev.pageY) 	{
+		if (ev.pageX || ev.pageY) {
 			posx = ev.pageX;
 			posy = ev.pageY;
 		}
-		else if (ev.clientX || ev.clientY) 	{
+		else if (ev.clientX || ev.clientY) {
 			posx = ev.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
 			posy = ev.clientY + document.body.scrollTop + document.documentElement.scrollTop;
 		}
-		return { x : posx, y : posy };
+		return { x: posx, y: posy };
 	};
 
-	const TiltObj = function(el, options) {
+	const TiltObj = function (el, options) {
 		this.el = el;
 		this.options = extend({}, this.options);
 		extend(this.options, options);
@@ -47,21 +47,21 @@
 
 	TiltObj.prototype.options = {
 		movement: {
-			img : { translation : {x: -40, y: -40} },
-			title : { translation : {x: 20, y: 20} },
+			img: { translation: { x: -40, y: -40 } },
+			title: { translation: { x: 20, y: 20 } },
 		}
 	};
 
-	TiltObj.prototype._initEvents = function() {
+	TiltObj.prototype._initEvents = function () {
 		this.mouseenterFn = (ev) => {
 			anime.remove(this.DOM.img);
 			anime.remove(this.DOM.title);
 		};
-		
+
 		this.mousemoveFn = (ev) => {
 			requestAnimationFrame(() => this._layout(ev));
 		};
-		
+
 		this.mouseleaveFn = (ev) => {
 			requestAnimationFrame(() => {
 				anime({
@@ -80,29 +80,29 @@
 		this.el.addEventListener('mouseenter', this.mouseenterFn);
 	};
 
-	TiltObj.prototype._layout = function(ev) {
+	TiltObj.prototype._layout = function (ev) {
 		// Mouse position relative to the document.
 		const mousepos = getMousePos(ev);
 		// Document scrolls.
-		const docScrolls = {left : document.body.scrollLeft + document.documentElement.scrollLeft, top : document.body.scrollTop + document.documentElement.scrollTop};
+		const docScrolls = { left: document.body.scrollLeft + document.documentElement.scrollLeft, top: document.body.scrollTop + document.documentElement.scrollTop };
 		const bounds = this.el.getBoundingClientRect();
 		// Mouse position relative to the main element (this.DOM.el).
-		const relmousepos = { x : mousepos.x - bounds.left - docScrolls.left, y : mousepos.y - bounds.top - docScrolls.top };
+		const relmousepos = { x: mousepos.x - bounds.left - docScrolls.left, y: mousepos.y - bounds.top - docScrolls.top };
 
 		// Movement settings for the animatable elements.
 		const t = {
 			img: this.options.movement.img.translation,
 			title: this.options.movement.title.translation,
 		};
-			
+
 		const transforms = {
-			img : {
-				x: (-1*t.img.x - t.img.x)/bounds.width*relmousepos.x + t.img.x,
-				y: (-1*t.img.y - t.img.y)/bounds.height*relmousepos.y + t.img.y
+			img: {
+				x: (-1 * t.img.x - t.img.x) / bounds.width * relmousepos.x + t.img.x,
+				y: (-1 * t.img.y - t.img.y) / bounds.height * relmousepos.y + t.img.y
 			},
-			title : {
-				x: (-1*t.title.x - t.title.x)/bounds.width*relmousepos.x + t.title.x,
-				y: (-1*t.title.y - t.title.y)/bounds.height*relmousepos.y + t.title.y
+			title: {
+				x: (-1 * t.title.x - t.title.x) / bounds.width * relmousepos.x + t.title.x,
+				y: (-1 * t.title.y - t.title.y) / bounds.height * relmousepos.y + t.title.y
 			}
 		};
 		this.DOM.img.style.WebkitTransform = this.DOM.img.style.transform = 'translateX(' + transforms.img.x + 'px) translateY(' + transforms.img.y + 'px)';
@@ -240,13 +240,13 @@
 	];
 	let step;
 
-	const initShapeLoop = function(pos) {
+	const initShapeLoop = function (pos) {
 		pos = pos || 0;
 		anime.remove(DOM.shapeEl);
 		anime({
 			targets: DOM.shapeEl,
 			easing: 'linear',
-			d: [{value: shapes[pos].pathAlt, duration:1500}, {value: shapes[pos].path, duration:1500}],
+			d: [{ value: shapes[pos].pathAlt, duration: 1500 }, { value: shapes[pos].path, duration: 1500 }],
 			loop: true,
 			fill: {
 				value: shapes[pos].fill.color,
@@ -257,7 +257,7 @@
 		});
 	};
 
-	const initShapeEl = function() {
+	const initShapeEl = function () {
 		anime.remove(DOM.svg);
 		anime({
 			targets: DOM.svg,
@@ -265,21 +265,21 @@
 			easing: 'linear',
 			scaleX: shapes[0].scaleX,
 			scaleY: shapes[0].scaleY,
-			translateX: shapes[0].tx+'px',
-			translateY: shapes[0].ty+'px',
-			rotate: shapes[0].rotate+'deg'
+			translateX: shapes[0].tx + 'px',
+			translateY: shapes[0].ty + 'px',
+			rotate: shapes[0].rotate + 'deg'
 		});
 
 		initShapeLoop();
 	};
 
-	const createScrollWatchers = function() {
-		DOM.contentElems.forEach((el,pos) => {
+	const createScrollWatchers = function () {
+		DOM.contentElems.forEach((el, pos) => {
 			const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 			pos = pos ? pos : contentElemsTotal;
-			const watcher = scrollMonitor.create(scrollElemToWatch,-350);
-			
-			watcher.enterViewport(function() {
+			const watcher = scrollMonitor.create(scrollElemToWatch, -350);
+
+			watcher.enterViewport(function () {
 				step = pos;
 				anime.remove(DOM.shapeEl);
 				anime({
@@ -293,7 +293,7 @@
 						duration: shapes[pos].fill.duration,
 						easing: shapes[pos].fill.easing
 					},
-					complete: function() {
+					complete: function () {
 						initShapeLoop(pos);
 					}
 				});
@@ -306,16 +306,16 @@
 					elasticity: shapes[pos].animation.svg.elasticity || 0,
 					scaleX: shapes[pos].scaleX,
 					scaleY: shapes[pos].scaleY,
-					translateX: shapes[pos].tx+'px',
-					translateY: shapes[pos].ty+'px',
-					rotate: shapes[pos].rotate+'deg'
+					translateX: shapes[pos].tx + 'px',
+					translateY: shapes[pos].ty + 'px',
+					rotate: shapes[pos].rotate + 'deg'
 				});
 			});
 
-			watcher.exitViewport(function() {
-				const idx = !watcher.isAboveViewport ? pos-1 : pos+1;
+			watcher.exitViewport(function () {
+				const idx = !watcher.isAboveViewport ? pos - 1 : pos + 1;
 
-				if( idx <= contentElemsTotal && step !== idx ) {
+				if (idx <= contentElemsTotal && step !== idx) {
 					step = idx;
 					anime.remove(DOM.shapeEl);
 					anime({
@@ -329,7 +329,7 @@
 							duration: shapes[idx].fill.duration,
 							easing: shapes[idx].fill.easing
 						},
-						complete: function() {
+						complete: function () {
 							initShapeLoop(idx);
 						}
 					});
@@ -342,16 +342,16 @@
 						elasticity: shapes[idx].animation.svg.elasticity || 0,
 						scaleX: shapes[idx].scaleX,
 						scaleY: shapes[idx].scaleY,
-						translateX: shapes[idx].tx+'px',
-						translateY: shapes[idx].ty+'px',
-						rotate: shapes[idx].rotate+'deg'
+						translateX: shapes[idx].tx + 'px',
+						translateY: shapes[idx].ty + 'px',
+						rotate: shapes[idx].rotate + 'deg'
 					});
 				}
 			});
 		});
 	};
 
-	const init = function() {
+	const init = function () {
 		imagesLoaded(document.body, () => {
 			initShapeEl();
 			createScrollWatchers();

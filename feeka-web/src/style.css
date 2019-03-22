@@ -108,14 +108,6 @@ a:focus {
   grid-template-rows: 150px 75px 75px;
   grid-template-areas: "... title title title" "author ... desc desc" "author ... link link"; }
 
-.content--related {
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  padding: 0 2em;
-  min-height: 600px;
-  height: 100vh;
-  font-size: 0.85em; }
 
 .content__img {
   grid-column: 1 / 3;
@@ -477,8 +469,31 @@ button.btn.btn-primary {
 #main-title {
   margin-bottom: 0.5em; }
 
-.container {
-  margin: 5em auto 1em auto; }
+#company-intro {
+  height: auto;
+  text-align: center;
+  padding: 2em; }
+
+#company-intro img {
+  width: 100%; }
+
+#company-intro h1 {
+  margin-top: 1em; }
+
+#company-intro #company-paragraph {
+  max-width: 18em; }
+
+#company-intro > .row > * {
+  text-align: left; }
+
+#about-us {
+  margin-top: 8em;
+  margin-bottom: 4em; }
+
+#about-us p {
+  text-align: left;
+  max-width: 32em;
+  margin: auto; }
 
 #about-us-parts [class*='col-'] {
   margin-bottom: 3em; }
