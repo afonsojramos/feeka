@@ -389,9 +389,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html,
-body {
-  font-family: "Comfortaa", cursive; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comfortaa", cursive !important;
+  color: #481C51; }
+
+body,
+span,
+p {
+  font-family: "Roboto", sans-serif; }
 
 button.btn.btn-primary {
   background-color: #481C51;
@@ -428,6 +438,9 @@ button.btn.btn-primary {
       font-weight: bold; }
       .navbar li a:hover {
         color: #E1AE2C !important; }
+      .navbar li a.disabled {
+        color: grey !important;
+        cursor: default; }
     .navbar li.contact a {
       background-color: #481C51;
       color: white !important;
@@ -440,8 +453,26 @@ button.btn.btn-primary {
 :target {
   display: block;
   position: relative;
-  top: -150px;
+  top: -70px;
   visibility: hidden; }
+
+.section h1 {
+  font-size: 3em;
+  text-transform: lowercase;
+  text-align: center; }
+
+#banner {
+  padding-top: 8em;
+  height: 100vh; }
+  #banner h1 {
+    font-size: 3em; }
+  #banner p {
+    color: #E1AE2C;
+    padding-right: 8em; }
+
+#about p {
+  padding: 0 10em;
+  text-align: center; }
 
 p {
   font-family: 'Roboto', sans-serif;
@@ -467,26 +498,8 @@ p {
   text-align: center;
   padding: 2em; }
 
-#company-intro img {
-  width: 100%; }
-
-#company-intro h1 {
-  margin-top: 1em; }
-
-#company-intro #company-paragraph {
-  max-width: 18em; }
-
 #company-intro > .row > * {
   text-align: left; }
-
-#about-us {
-  margin-top: 8em;
-  margin-bottom: 4em; }
-
-#about-us p {
-  text-align: left;
-  max-width: 32em;
-  margin: auto; }
 
 #about-us-parts [class*='col-'] {
   margin-bottom: 3em; }

@@ -1,6 +1,17 @@
-html,
-body {
-    font-family: $comfortaa;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $comfortaa !important;
+    color: $primary-color;
+}
+
+body,
+span,
+p {
+    font-family: $roboto;
 }
 
 button.btn.btn-primary {
@@ -45,6 +56,10 @@ button.btn.btn-primary {
             &:hover {
                 color: $secondary-color !important;
             }
+            &.disabled {
+                color: grey !important;
+                cursor: default;
+            }
         }
         &.contact a {
             background-color: $primary-color;
@@ -63,6 +78,14 @@ button.btn.btn-primary {
 :target {
     display: block;
     position: relative;
-    top: -150px;
+    top: -70px;
     visibility: hidden;
+}
+
+.section {
+    h1 {
+        font-size: 3em;
+        text-transform: lowercase;
+        text-align: center;
+    }
 }

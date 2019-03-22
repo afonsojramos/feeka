@@ -1,0 +1,18 @@
+#banner {
+    padding-top: 8em;
+    height: 100vh;
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        color: $secondary-color;
+        padding-right: 8em;
+    }
+}
+
+#about {
+    p {
+        padding: 0 10em;
+        text-align: center;
+    }
+}
