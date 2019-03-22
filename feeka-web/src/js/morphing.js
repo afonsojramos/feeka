@@ -126,7 +126,7 @@
 			tx: 0,
 			ty: -100,
 			fill: {
-				color: '#342560',
+				color: '#481C51',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -150,7 +150,7 @@
 			tx: 0,
 			ty: 100,
 			fill: {
-				color: '#d65640',
+				color: '#E1AE2C',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -174,7 +174,7 @@
 			tx: -100,
 			ty: 200,
 			fill: {
-				color: '#bfb37c',
+				color: '#4fa28b',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -198,7 +198,7 @@
 			tx: 0,
 			ty: -50,
 			fill: {
-				color: '#1e71bf',
+				color: '#77b7d0',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -222,7 +222,7 @@
 			tx: 0,
 			ty: 150,
 			fill: {
-				color: '#44b7a3',
+				color: '#c13d7a',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -234,31 +234,6 @@
 				svg: {
 					duration: 1000,
 					easing: 'easeInOutQuad'
-				}
-			}
-		},
-		{
-			path: 'M 415.6,206.3 C 407.4,286.6 438.1,373.6 496.2,454.8 554.3,536.1 497,597.2 579.7,685.7 662.4,774.1 834.3,731.7 898.5,653.4 962.3,575 967.1,486 937.7,370 909.3,253.9 937.7,201.5 833.4,105.4 729.3,9.338 602.2,13.73 530.6,41.91 459,70.08 423.9,126.1 415.6,206.3 Z',
-			pathAlt: 'M 415.6,206.3 C 407.4,286.6 415.5,381.7 473.6,462.9 531.7,544.2 482.5,637.6 579.7,685.7 676.9,733.8 826.2,710.7 890.4,632.4 954.2,554 926.8,487.6 937.7,370 948.6,252.4 937.7,201.5 833.4,105.4 729.3,9.338 602.2,13.73 530.6,41.91 459,70.08 423.9,126.1 415.6,206.3 Z',
-			scaleX: 2,
-			scaleY: 1,
-			rotate: 0,
-			tx: 0,
-			ty: 100,
-			fill: {
-				color: '#4b66b3',
-				duration: 500,
-				easing: 'linear'
-			},
-			animation: {
-				path: {
-					duration: 2000,
-					easing: 'easeOutElastic',
-					elasticity: 400
-				},
-				svg: {
-					duration: 2000,
-					easing: 'easeOutQuad'
 				}
 			}
 		}
