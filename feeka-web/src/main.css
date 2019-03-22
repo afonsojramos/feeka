@@ -79,7 +79,7 @@ p {
   padding: 1.5em;
   border-radius: 25px 25px;
   margin: auto;
-  width: 19rem;
+  max-width: 19rem;
   height: 100%;
 }
 

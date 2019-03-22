@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass src/styles/*.scss src/main.css"
+    "compile": "sass src/styles/main.scss src/main.css"
   },
   "author": "Feeka",
   "license": "ISC"
