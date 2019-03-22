@@ -1,4 +1,11 @@
-/*# sourceMappingURL=main.css.map */
+@import 'morphing';
+@import 'variables';
+@import 'global';
+@import 'specific';
+
+//delete import later
+@import 'intro_about_us';
+
 body {
     font-family: 'Comfortaa', cursive;
 }
@@ -54,6 +61,3 @@ img {
         }
     }
 }
-
-@import 'morphing';
-@import 'intro_about_us';

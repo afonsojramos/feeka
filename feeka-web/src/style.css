@@ -1,46 +1,4 @@
-/*# sourceMappingURL=main.css.map */
-body {
-  font-family: 'Comfortaa', cursive; }
-
-.btn.btn-primary {
-  background-color: #481C51;
-  border-color: #481C51;
-  border-radius: 25px 25px; }
-
-img {
-  border-radius: 2%; }
-
-.page-footer .footer-logo {
-  max-width: 100%;
-  height: auto; }
-
-.footer-title {
-  font-family: 'Comfortaa', cursive;
-  color: #481C51;
-  font-weight: bolder; }
-
-.footer-navigation, .footer-contact {
-  font-family: 'Roboto', sans-serif;
-  color: black; }
-  .footer-navigation p a, .footer-contact p a {
-    color: black; }
-
-@media (max-width: 768px) {
-  .footer-navigation {
-    display: none; }
-
-  .footer-contact {
-    margin-left: 3em; }
-
-  .footer-title {
-    display: none; }
-
-  .page-footer {
-    font-size: 0.8em;
-    padding: 0em 1em; }
-    .page-footer img {
-      width: 70%;
-      height: 70%; } }
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Roboto");
 @font-face {
   font-family: 'nexa_boldregular';
   font-weight: bold;
@@ -525,5 +483,47 @@ p {
 
   #about-us-parts .card {
     margin-bottom: 0; } }
+body {
+  font-family: 'Comfortaa', cursive; }
+
+.btn.btn-primary {
+  background-color: #481C51;
+  border-color: #481C51;
+  border-radius: 25px 25px; }
+
+img {
+  border-radius: 2%; }
+
+.page-footer .footer-logo {
+  max-width: 100%;
+  height: auto; }
+
+.footer-title {
+  font-family: 'Comfortaa', cursive;
+  color: #481C51;
+  font-weight: bolder; }
+
+.footer-navigation, .footer-contact {
+  font-family: 'Roboto', sans-serif;
+  color: black; }
+  .footer-navigation p a, .footer-contact p a {
+    color: black; }
+
+@media (max-width: 768px) {
+  .footer-navigation {
+    display: none; }
+
+  .footer-contact {
+    margin-left: 3em; }
+
+  .footer-title {
+    display: none; }
+
+  .page-footer {
+    font-size: 0.8em;
+    padding: 0em 1em; }
+    .page-footer img {
+      width: 70%;
+      height: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
