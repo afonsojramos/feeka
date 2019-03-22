@@ -389,6 +389,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html,
+body {
+  font-family: "Comfortaa", cursive; }
+
+button.btn.btn-primary {
+  background-color: #481C51;
+  color: white;
+  border-radius: 25px 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5em 2em;
+  transition: all .5s; }
+  button.btn.btn-primary:hover {
+    background-color: #E1AE2C; }
+  button.btn.btn-primary:focus, button.btn.btn-primary:active {
+    box-shadow: none; }
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -483,14 +502,6 @@ p {
 
   #about-us-parts .card {
     margin-bottom: 0; } }
-body {
-  font-family: 'Comfortaa', cursive; }
-
-.btn.btn-primary {
-  background-color: #481C51;
-  border-color: #481C51;
-  border-radius: 25px 25px; }
-
 img {
   border-radius: 2%; }
 

@@ -1,0 +1,23 @@
+html,
+body {
+    font-family: $comfortaa;
+}
+
+button.btn.btn-primary {
+    background-color: $primary-color;
+    color: white;
+    border-radius: 25px 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    transition: all .5s;
+    &:hover {
+        background-color: $secondary-color;
+    }
+    &:focus,
+    &:active {
+        box-shadow: none;
+    }
+}
