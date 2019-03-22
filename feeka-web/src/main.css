@@ -8,6 +8,10 @@ body {
   color: blue;
 }
 
+img {
+  border-radius: 2%;
+}
+
 @font-face {
   font-family: "nexa_boldregular";
   font-weight: bold;
