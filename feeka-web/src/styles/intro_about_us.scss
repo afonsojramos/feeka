@@ -23,52 +23,44 @@ p {
     margin: 5em auto 1em auto;
 }
 
-.container#company-intro {
-    max-width: 1440px;
+#company-intro {
+    height: auto;
     text-align: center;
     padding: 2em;
 }
 
-.container#company-intro  img {
+#company-intro  img {
     width: 100%;
 }
 
-.container#company-intro h1{
+#company-intro h1{
     margin-top: 1em;
 }
 
-.container#company-intro #company-paragraph {
+#company-intro #company-paragraph {
     max-width: 18em;
 }
 
-
-.container#company-intro > .row > * {
+#company-intro > .row > * {
     text-align: left;
 }
 
-.container#about-us {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    text-align: center;
-    padding: 2em;
+#about-us {
+    margin-top: 8em;
+    margin-bottom: 4em;
 }
 
-.container#about-us p {
+#about-us p {
     text-align: left;
     max-width: 32em;
     margin: auto;
 }
 
-.container#about-us-parts  {
-    margin-top: 2em;
-    max-width: 1240px;
-}
-
-.container#about-us-parts [class*='col-']{
+#about-us-parts [class*='col-']{
     margin-bottom: 3em;
 }
 
-.container#about-us-parts .card {
+#about-us-parts .card {
     padding: 1.5em;
     border-radius: 25px 25px;
     margin: auto;
@@ -76,17 +68,21 @@ p {
     height: 100%;
 }
 
-.container#about-us-parts .card .card-title {
+#about-us-parts .card .card-title {
     font-family: 'Comfortaa', sans-serif;
     font-size: 22px;
     color: #481C51;
 }
 
-.container#about-us-parts .card .card-body {
+#about-us-parts .card img {
+    height: 217.617px;
+}
+
+#about-us-parts .card .card-body {
     padding: 1.5em 0 0 0;
 }
 
-.container#about-us-parts .card .card-text {
+#about-us-parts .card .card-text {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #000;
@@ -105,28 +101,20 @@ p {
         color: #481C51;
     }
 
-    .container { 
-        margin: 12em auto;
-    }
-
-    .container#company-intro img{
+    #company-intro img{
         width: 100%;
         padding: 0;
     }
     
-    .container#company-intro #company-paragraph {
+    #company-intro #company-paragraph {
         max-width: 23em;
     }
 
-    .container#about-us {
-        margin-bottom: 8em;
+    #about-us {
+        margin-bottom: 4em;
     }
 
-    .container#about-us-parts {
-        margin-top: 8em;
-    }
-
-    .container#about-us-parts .card {
+    #about-us-parts .card {
         margin-bottom: 0;
     }
 
