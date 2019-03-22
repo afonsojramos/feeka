@@ -89,10 +89,7 @@ a:focus {
 	pointer-events: none;
 }
 
-.content {
-	position: relative;
-	display: grid;
-}
+
 
 .content--fixed {
 	position: fixed;
@@ -124,16 +121,6 @@ a:focus {
 	grid-template-areas:	"... title title title"
 							"author ... desc desc"
 							"author ... link link";
-}
-
-.content--related {
-	text-align: center;
-	align-content: center;
-	justify-content: center;
-	padding: 0 2em;
-	min-height: 600px;
-	height: 100vh;
-	font-size: 0.85em;
 }
 
 .content__img {
