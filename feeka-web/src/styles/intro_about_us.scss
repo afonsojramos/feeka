@@ -1,11 +1,6 @@
 #main-title {
     margin-bottom: 0.5em;
 }
-
-.container {
-    margin: 5em auto 1em auto;
-}
-
 #about-us-parts [class*='col-']{
     margin-bottom: 3em;
 }
@@ -39,29 +34,9 @@
 }
 
 @media (min-width: 768px) {
-    p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 17px;
-        color: #000;
-    }
-    
-    .title-purple {
-        font-family: 'Comfortaa', sans-serif;
-        font-size: 58px;
-        color: #481C51;
-    }
-
-    #company-intro img{
-        width: 100%;
-        padding: 0;
-    }
     
     #company-intro #company-paragraph {
         max-width: 23em;
-    }
-
-    #about-us {
-        margin-bottom: 4em;
     }
 
     #about-us-parts .card {
