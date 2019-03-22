@@ -1,5 +1,4 @@
 #banner {
-    padding-top: 8em;
     height: 100vh;
     h1 {
         font-size: 3em;
@@ -14,5 +13,51 @@
     p {
         padding: 0 10em;
         text-align: center;
+    }
+    [class*='col-']{
+        margin-bottom: 3em;
+    }
+    .card {
+        padding: 1.5em;
+        border-radius: 25px 25px;
+        margin: auto;
+        max-width: 19rem;
+        height: 100%;
+        .card-title {
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 22px;
+            color: #481C51;
+        }
+        img {
+            height: 217.617px;
+        }
+        .card-body {
+            padding: 1.5em 0 0 0;
+        }
+        .card-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: #000;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    #banner {
+        padding-top: 10em;
+        height: auto;
+    }
+    #about {
+        p {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    #about {
+        div[class^='col-']:not(:first-child) {
+            margin-top: 4em;
+        }
     }
 }
