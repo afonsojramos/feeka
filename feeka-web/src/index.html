@@ -15,21 +15,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="js/navbar.js"></script>
+
 </head>
 
 <body>
@@ -67,9 +55,9 @@
     </header>
 
 
-    <div id="banner">
+    <div id="banner" class="d-flex align-items-center">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-6 col-md-12 order-lg-1 order-2">
                     <h1>Our bonds overcome challenges.</h1>
                     <p>By combining technology, creativity, business, and good communication, we develop intelligent
@@ -84,58 +72,60 @@
 
     <main>
 
-        <!-- Shapes -->   
+        <!-- Shapes -->
+        <!--
         <div class="morph-wrap">
             <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
                 <path
                     d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />
             </svg>
-        </div>        
+        </div>
+        <div class="content content--fixed">
+        </div>
+        -->
 
         <!-- Content -->
-        <div class="content-wrap">
-            <div id="about" class="section">
-                <a id="About"></a>
-                <div class="container">
-                    <h1>About Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi nisl, mollis eget lacus eget,
-                        consequat pulvinar sapien. Donec tincidunt sed nibh et commodo. Aliquam placerat iaculis
-                        euismod.
-                        Phasellus arcu justo, scelerisque auctor placerat in, viverra non elit. Mauris non nulla</p>
-                </div>
+
+        <div id="about" class="section">
+            <a id="About"></a>
+            <div class="container">
+                <h1>About Us</h1>
+                <p class="description">We are <b>feeka</b>, a Portuguese company that develops technological solutions
+                    focused on the client's opportunity with versatility, collaboration, innovation, and creativity. The
+                    company, which started its work in 2019, has more than 30 employees and currently has partnerships
+                    with companies Sonae BIT, Critical Manufacturing, ZOS Lda and Escola Global.</p>
             </div>
 
-            <div class="row row-eq-height" id="about-us-parts">
+            <div class="row" id="about-cards">
                 <div class="col-lg-4 col-md-12">
                     <div class="card">
-                        <img src="assets/SoftwareEngineering.svg" class="card-img-top" alt="...">
+                        <img class="img-fluid" src="assets/SoftwareEngineering.svg" alt="software-image">
                         <div class="card-body">
                             <h5 class="card-title">Software Engineering</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi nisl,
-                                mollis eget lacus eget, consequat pulvinar sapien. Donec tincidunt sed nibh et commodo.
-                                Aliquam placerat</p>
+                            <p class="card-text">Software development with Agile methodology, focused on process
+                                optimization, concept, definition, design, testing, implementation, and quality.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="card">
-                        <img src="assets/Business.svg" class="card-img-top" alt="...">
+                        <img class="img-fluid" src="assets/Business.svg" alt="business-image">
                         <div class="card-body">
                             <h5 class="card-title">Business</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi nisl,
-                                mollis eget lacus eget, consequat pulvinar sapien. Donec tincidunt sed nibh et commodo.
-                                Aliquam placerat</p>
+                            <p class="card-text">Business management in model canvas, process mapping, key performance
+                                indicators, business plan, and responsibility matrix.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="card">
-                        <img src="assets/Multimedia.svg" class="card-img-top" alt="...">
+                        <img class="img-fluid" src="assets/Multimedia.svg" alt="multimedia-image">
                         <div class="card-body">
                             <h5 class="card-title">Multimedia</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi nisl,
-                                mollis eget lacus eget, consequat pulvinar sapien. Donec tincidunt sed nibh et commodo.
-                                Aliquam placerat</p>
+                            <p class="card-text">Visual identities, illustration, animation, interfaces, user
+                                experience, social media, video production, interactive narratives, storyboarding and
+                                digital marketing.</p>
                         </div>
                     </div>
                 </div>
@@ -143,8 +133,7 @@
         </div>
 
         <!-- SOFIA IS HERE -->
-
-        </div>
+        <!---
         <div class="content-wrap">
             <div class="row">
                 <div class="col-12">
@@ -252,7 +241,7 @@
         </div>
 
         <div class="content content--related">
-            <!-- Footer -->
+            
             <footer class="page-footer">
                 <div class="d-flex justify-content-around align-items-center py-4">
 
@@ -278,9 +267,9 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div> -->
     </main>
-
+    <script src="js/navbar.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/scrollMonitor.js"></script>
@@ -290,11 +279,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

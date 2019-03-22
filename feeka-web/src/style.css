@@ -455,39 +455,40 @@ button.btn.btn-primary {
     font-size: 3em; }
   #banner p {
     color: #E1AE2C;
-    padding-right: 8em; }
+    padding-right: 8em;
+    font-size: 1.2em; }
 
-#about p {
-  padding: 0 10em;
+#about .description {
+  padding: 0 7.8em;
   text-align: center; }
-#about [class*='col-'] {
-  margin-bottom: 3em; }
-#about .card {
-  padding: 1.5em;
-  border-radius: 25px 25px;
-  margin: auto;
-  max-width: 19rem;
-  height: 100%; }
-  #about .card .card-title {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 22px;
-    color: #481C51; }
-  #about .card img {
-    height: 217.617px; }
-  #about .card .card-body {
-    padding: 1.5em 0 0 0; }
-  #about .card .card-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: #000; }
+#about #about-cards {
+  margin: 6em 6em; }
+  #about #about-cards .card {
+    padding: 1.5em;
+    border-radius: 25px 25px;
+    max-width: 20rem;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border: none; }
+    #about #about-cards .card img {
+      height: 10em; }
+    #about #about-cards .card .card-title {
+      font-size: 1.4em; }
+    #about #about-cards .card .card-body {
+      padding-top: 2.5em; }
 
 @media (max-width: 991.98px) {
   #banner {
     padding-top: 10em;
     height: auto; }
+    #banner p {
+      padding: 0 0 2em 0; }
 
-  #about p {
-    padding: 0; } }
+  #about .description {
+    padding: 0; }
+  #about #about-cards {
+    margin: 6em 0; } }
 @media (max-width: 767.98px) {
   #about div[class^='col-']:not(:first-child) {
     margin-top: 4em; } }
