@@ -462,7 +462,7 @@ button.btn.btn-primary {
   padding: 0 7.8em;
   text-align: center; }
 #about #about-cards {
-  margin: 6em 6em; }
+  margin: 6em 0 8em 0; }
   #about #about-cards .card {
     padding: 1.5em;
     border-radius: 25px 25px;
@@ -478,6 +478,11 @@ button.btn.btn-primary {
     #about #about-cards .card .card-body {
       padding-top: 2.5em; }
 
+#projects .row {
+  margin: 5em 0 8em 0; }
+#projects button {
+  margin-top: 2em; }
+
 @media (max-width: 991.98px) {
   #banner {
     padding-top: 10em;
@@ -487,10 +492,12 @@ button.btn.btn-primary {
 
   #about .description {
     padding: 0; }
-  #about #about-cards {
-    margin: 6em 0; } }
-@media (max-width: 767.98px) {
   #about div[class^='col-']:not(:first-child) {
+    margin-top: 4em; }
+
+  #projects div[class='row']:nth-child(2n+1) div[class^='col-']:first-child {
+    margin-top: 4em; }
+  #projects div[class^='row']:nth-child(2n+2) div[class^='col-']:not(:first-child) {
     margin-top: 4em; } }
 img {
   border-radius: 2%; }
