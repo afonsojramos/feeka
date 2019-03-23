@@ -442,6 +442,19 @@ button.btn.btn-primary {
       .navbar li.contact a:hover {
         background-color: #E1AE2C; }
 
+button.navbar-toggler {
+  font-family: "Comfortaa", cursive;
+  text-transform: lowercase;
+  font-size: 1em;
+  background-color: #481C51;
+  color: white !important;
+  padding: 0.5em 1.5em !important;
+  border-radius: 25px 25px;
+  outline: none;
+  transition: all .5s; }
+  button.navbar-toggler:hover {
+    background-color: #E1AE2C; }
+
 :target {
   display: block;
   position: relative;
@@ -468,6 +481,25 @@ footer {
     padding-left: 1em;
     font-size: 0.9em; }
 
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 1.2em 2em !important; }
+    .navbar li a {
+      text-align: center;
+      margin-left: 0;
+      font-size: 1em;
+      color: #481C51 !important; }
+    .navbar li:first-child {
+      margin-top: 1.5em; }
+    .navbar li.contact a {
+      background-color: transparent;
+      color: #481C51 !important;
+      padding: default;
+      border-radius: 0;
+      margin-left: 0 !important; }
+      .navbar li.contact a:hover {
+        background-color: transparent;
+        color: #E1AE2C !important; } }
 #banner {
   height: 100vh; }
   #banner h1 {

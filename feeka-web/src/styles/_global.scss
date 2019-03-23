@@ -80,6 +80,21 @@ button.btn.btn-primary {
     }
 }
 
+button.navbar-toggler {
+    font-family: $comfortaa;
+    text-transform: lowercase;
+    font-size: 1em;
+    background-color: $primary-color;
+    color: white !important;
+    padding: 0.5em 1.5em !important;
+    border-radius: 25px 25px;
+    outline: none;
+    transition: all .5s;
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
 // Anchor target offset fix
 :target {
     display: block;
@@ -112,5 +127,33 @@ footer {
         margin: 0;
         padding-left: 1em;
         font-size: 0.9em;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 1.2em 2em !important;
+        li {
+            a {
+                text-align: center;
+                margin-left: 0;
+                font-size: 1em;
+                color: $primary-color !important;
+            }
+            &:first-child {
+                margin-top: 1.5em;
+            }
+            &.contact a {
+                background-color: transparent;
+                color: $primary-color !important;
+                padding: default;
+                border-radius: 0;
+                margin-left: 0 !important;
+                &:hover {
+                    background-color: transparent;
+                    color: $secondary-color !important;
+                }
+            }
+        }
     }
 }
