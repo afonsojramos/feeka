@@ -15,6 +15,10 @@ p {
     color: black;
 }
 
+img {
+    border-radius: 2%;
+}
+
 button.btn.btn-primary {
     background-color: $primary-color;
     color: white;
@@ -88,5 +92,24 @@ button.btn.btn-primary {
         font-size: 3em;
         text-transform: lowercase;
         text-align: center;
+    }
+}
+
+footer {
+    margin: 20em 0 3em 0;
+    h6 {
+        font-weight: bold;
+        text-transform: lowercase;
+        margin-bottom: 1.5em;
+    }
+    i {
+        color: $secondary-color;
+        width: 1em;
+        font-size: 1.1em;
+    }
+    p {
+        margin: 0;
+        padding-left: 1em;
+        font-size: 0.9em;
     }
 }
