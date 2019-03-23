@@ -21,6 +21,7 @@ img {
 
 button.btn.btn-primary {
     background-color: $primary-color;
+    font-family: $comfortaa;
     color: white;
     border-radius: 25px 25px;
     outline: none;
@@ -83,7 +84,7 @@ button.btn.btn-primary {
 :target {
     display: block;
     position: relative;
-    top: -70px;
+    top: -120px;
     visibility: hidden;
 }
 
