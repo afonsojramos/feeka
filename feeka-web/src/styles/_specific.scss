@@ -17,6 +17,7 @@
     }
     #about-cards {
         margin: 6em 0 8em 0;
+        position: relative;
         .card {
             padding: 1.5em;
             border-radius: 25px 25px;
@@ -36,14 +37,136 @@
             }
         }
     }
+    #about-cards:before {
+      content: "";
+      display: inline-block;
+      width: 100vw;
+      height: 50vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      margin: auto;
+      background-image: url("assets/svgRoxoDesktop.svg");
+      top: 0;
+      bottom: 0;
+      left: calc((1140px - 100vw)/2 - 15px);
+
+      @media (max-width: 1200px) {
+          left: calc((960px - 100vw)/2 - 15px);
+      }
+
+      @media (max-width: 992px) {
+          left: calc((720px - 100vw)/2 - 15px);
+          background-image: url("assets/svgRoxoMobile.svg");
+          height: 1500px;
+      }
+
+      @media (max-width: 768px) {
+          left: calc((540px - 100vw)/2 - 15px);
+      }
+        
+      @media (max-width: 576px) {
+          left: -15px;
+      }
+  }
 }
 
 #projects {
     .row {
         margin: 5em 0 8em 0;
+        position: relative;
+        min-height: 500px;
+
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        @media (max-width: 992px) {
+            img {
+                max-height: 300px;
+            }
+        }
     }
     button {
         margin-top: 2em;
+        width: fit-content;
+    }
+    .row:before {
+        content: "";
+        display: inline-block;
+        width: 50vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+    }
+    .row:nth-child(even):before {
+        right: 50%;
+
+        @media (max-width: 992px) {
+            left: calc((720px - 100vw)/2 - 15px);
+            right: auto;
+        }
+
+        @media (max-width: 768px) {
+            left: calc((540px - 100vw)/2 - 15px);
+        }
+          
+        @media (max-width: 576px) {
+            left: -15px;
+            width: 70vw;
+            bottom: auto;
+        }
+    }
+    .row:nth-child(odd):before {
+        left: 50%;
+        background-position: right;
+
+        @media (max-width: 992px) {
+          right: calc((720px - 100vw)/2 - 15px);
+          left: auto;
+          background-position: right top;
+        }
+
+        @media (max-width: 768px) {
+            right: calc((540px - 100vw)/2 - 15px);
+        }
+
+        @media (max-width: 576px) {
+            right: -15px;
+            width: 70vw;
+            bottom: auto;
+            top: -100px;
+        }
+    }
+    .row:nth-child(2):before {
+        background-image: url("assets/svgLaranjaDesktop.svg");
+        max-height: 600px;
+
+        @media (max-width: 576px) {
+            top: -30px;
+        }
+    }
+    .row:nth-child(3):before {
+        background-image: url("assets/svgVerdeDesktop.svg");
+        max-height: 800px;
+    }
+    .row:nth-child(4):before {
+        background-image: url("assets/svgAzulDesktop.svg");
+        max-height: 800px;
+
+        @media (max-width: 576px) {
+          top: -150px;
+        }
+    }
+    .row:nth-child(5):before {
+        background-image: url("assets/svgRosaDesktop.svg");
+        max-height: 800px;
     }
 }
 
