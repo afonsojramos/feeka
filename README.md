@@ -56,6 +56,12 @@ $ yarn dev
 
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
+If you mess around with the `sass` files, you'll have to have another terminal running:
+
+```bash
+$ npm run sass
+```
+
 # Deployment
 
 The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
