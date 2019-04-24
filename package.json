@@ -1,8 +1,8 @@
 {
     "name": "feeka-theme",
     "description": "The theme for feeka blog",
-    "demo": "https://demo.ghost.io",
-    "version": "2.9.9",
+    "demo": "https://feeka.pt",
+    "version": "1.2.3",
     "engines": {
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
@@ -23,9 +23,9 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Feeka",
+        "email": "wearefeeka@gmail.com",
+        "url": "https://feeka.pt"
     },
     "gpm": {
         "type": "theme",
