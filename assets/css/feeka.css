@@ -14,6 +14,10 @@ h6 {
   color: #481C51 !important;
 }
 
+h1 {
+  margin: 0.67em 0 !important;
+}
+
 body,
 span,
 p {
