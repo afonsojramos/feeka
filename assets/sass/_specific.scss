@@ -1,0 +1,227 @@
+#banner {
+    height: 100vh;
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        color: $secondary-color;
+        padding-right: 8em;
+        font-size: 1.2em;
+    }
+}
+
+#about {
+    .description {
+        padding: 0 7.8em;
+        text-align: center;
+    }
+
+    #about-cards {
+        margin: 6em 0 8em 0;
+        position: relative;
+
+        .card {
+            padding: 1.5em;
+            border-radius: 25px 25px;
+            max-width: 20rem;
+            height: 100%;
+            margin: auto;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            border: none;
+            transition: all ease-out 0.3s;
+
+            img {
+                height: 10em;
+            }
+
+            .card-title {
+                font-size: 1.4em;
+            }
+
+            .card-body {
+                padding-top: 2.5em;
+            }
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    #about-cards:before {
+        content: "";
+        display: inline-block;
+        width: 100vw;
+        height: 50vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        margin: auto;
+        background-image: url("../svgRoxoDesktop.svg");
+        top: 0;
+        bottom: 0;
+        left: calc((1140px - 100vw)/2 - 15px);
+
+        @media (max-width: 1200px) {
+            left: calc((960px - 100vw)/2 - 15px);
+        }
+
+        @media (max-width: 992px) {
+            left: calc((720px - 100vw)/2 - 15px);
+            background-image: url("../svgRoxoMobile.svg");
+            height: 1500px;
+        }
+
+        @media (max-width: 768px) {
+            left: calc((540px - 100vw)/2 - 15px);
+        }
+
+        @media (max-width: 576px) {
+            left: -15px;
+        }
+    }
+}
+
+#projects {
+    .row {
+        margin: 5em 0 8em 0;
+        position: relative;
+        min-height: 500px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media (max-width: 992px) {
+            img {
+                max-height: 300px;
+            }
+        }
+    }
+
+    button {
+        margin-top: 2em;
+        width: fit-content;
+    }
+
+    .row:before {
+        content: "";
+        display: inline-block;
+        width: 50vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+    }
+
+    .row:nth-child(even):before {
+        right: 50%;
+
+        @media (max-width: 992px) {
+            left: calc((720px - 100vw)/2 - 15px);
+            right: auto;
+        }
+
+        @media (max-width: 768px) {
+            left: calc((540px - 100vw)/2 - 15px);
+        }
+
+        @media (max-width: 576px) {
+            left: -15px;
+            width: 70vw;
+            bottom: auto;
+        }
+    }
+
+    .row:nth-child(odd):before {
+        left: 50%;
+        background-position: right;
+
+        @media (max-width: 992px) {
+            right: calc((720px - 100vw)/2 - 15px);
+            left: auto;
+            background-position: right top;
+        }
+
+        @media (max-width: 768px) {
+            right: calc((540px - 100vw)/2 - 15px);
+        }
+
+        @media (max-width: 576px) {
+            right: -15px;
+            width: 70vw;
+            bottom: auto;
+            top: -100px;
+        }
+    }
+
+    .row:nth-child(2):before {
+        background-image: url("../svgLaranjaDesktop.svg");
+        max-height: 600px;
+
+        @media (max-width: 576px) {
+            top: -30px;
+        }
+    }
+
+    .row:nth-child(3):before {
+        background-image: url("../svgVerdeDesktop.svg");
+        max-height: 800px;
+    }
+
+    .row:nth-child(4):before {
+        background-image: url("../svgAzulDesktop.svg");
+        max-height: 800px;
+
+        @media (max-width: 576px) {
+            top: -150px;
+        }
+    }
+
+    .row:nth-child(5):before {
+        background-image: url("../svgRosaDesktop.svg");
+        max-height: 800px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #banner {
+        padding-top: 10em;
+        height: auto;
+
+        p {
+            padding: 0 0 2em 0;
+        }
+    }
+
+    #about {
+        .description {
+            padding: 0;
+        }
+
+        div[class^='col-']:not(:first-child) {
+            margin-top: 4em;
+        }
+    }
+
+    #projects {
+        div[class='row']:nth-child(2n+1) {
+            div[class^='col-']:first-child {
+                margin-top: 4em;
+            }
+        }
+
+        div[class^='row']:nth-child(2n+2) {
+            div[class^='col-']:not(:first-child) {
+                margin-top: 4em;
+            }
+        }
+    }
+}

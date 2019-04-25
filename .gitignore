@@ -1,0 +1,5 @@
+node_modules/
+dist/
+assets/built/
+*.scssc
+*.css
