@@ -64,6 +64,7 @@ body {
 .site-main {
     z-index: 100;
     flex-grow: 1;
+    margin-top: 6em;
 }
 
 /* Full width page blocks */
@@ -303,22 +304,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 0 20px 40px;
-    min-height: 300px;
-    background: #fff center center;
-    background-size: cover;
-    border-radius: 5px;
-    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
-    transition: all 0.5s ease;
-}
+    margin: 0 0 60px;
 
-.post-card:hover {
-    box-shadow: rgba(39,44,49,0.07) 8px 28px 50px, rgba(39, 44, 49, 0.04) 1px 6px 12px;
-    transition: all 0.4s ease;
-    transform: translate3D(0, -1px, 0) scale(1.02);
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
 }
 
 .post-card-image-link {
+    flex: 1;
     position: relative;
     display: block;
     overflow: hidden;
@@ -327,17 +321,20 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-image {
     width: 100%;
-    height: 200px;
+    height: 400px;
     background: var(--lightgrey) no-repeat center center;
     object-fit: cover;
 }
 
 .post-card-content-link {
     position: relative;
-    flex-grow: 1;
     display: block;
-    padding: 25px 25px 0;
+    padding: 2rem 0 0 0;
     color: var(--darkgrey);
+    
+    @media (min-width: 992px) {
+        padding: 0 2rem;
+    }
 }
 
 .post-card-content-link:hover {
@@ -357,17 +354,47 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-title {
     margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
 .post-card-content {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .post-card-excerpt {
-    font-family: Georgia, serif;
+    font-family: Roboto, serif;
+    font-size: 1.1rem;
+}
+
+.post-card-author {
+    font-size: 1.1rem;
+    font-family: Comfortaa;
+    color: #481c51;
+}
+
+.post-card-button {
+    background-color: #481c51;
+    color: #fff !important;
+    padding: .5em 2em;
+    border-radius: 25px 25px;
+    margin-left: 2.5em;
+    font-weight: 700;
+    font-family: Comfortaa;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+    
+    @media (min-width: 992px) {
+        margin: 1rem 2rem;
+    }
+}
+
+.post-card-button:hover {
+    text-decoration: none;
+    background-color: #e1ae2c;
+    transition: all .2s ease-out;
 }
 
 .post-card-meta {
@@ -624,16 +651,20 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 6px 1px;
 }
 
-.post-full-image {
+figure.post-full-image {
     margin: 0 -10vw -165px;
-    background: var(--lightgrey) center center;
+    background: white center center;
+    background-color: white !important;
     border-radius: 5px;
     overflow: hidden;
+    @media (max-width: 650px) {
+        margin-bottom: 0px;
+    }
 }
 
 .post-full-image img {
     width: 100%;
-    height: 800px;
+    height: 900px;
     object-fit: cover;
 }
 
@@ -1847,8 +1878,4 @@ Usage (In Ghost editor):
 .error-link {
     display: inline-block;
     margin-top: 5px;
-}
-
-.error-template .post-feed {
-    padding-top: 0;
 }

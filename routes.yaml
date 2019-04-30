@@ -1,0 +1,10 @@
+routes:
+  /: index
+
+collections:
+  /blog/:
+    permalink: /blog/{slug}/
+    template: tag
+
+taxonomies:
+  tag: /tag/{slug}/
