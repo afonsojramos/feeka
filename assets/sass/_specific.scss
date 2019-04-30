@@ -225,3 +225,25 @@
         }
     }
 }
+
+div.site-header-content {
+    padding: 2em 0 8em 0;
+    @media (max-width: 992px) {
+        padding: 0em;
+    }
+
+    h1.site-title{
+        text-align: center !important;
+
+        @media (max-width: 992px) {
+            font-size: 2rem!important;
+        }
+    }
+}
+
+ul.author-list span h2.post-author {
+    margin-left: 0.6em;
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
