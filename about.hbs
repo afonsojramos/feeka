@@ -15,10 +15,8 @@ into the {body} of the default.hbs template --}}
     </div>
 </div>
 
-<main id="site-main" class="site-main outer">
+<main id="site-main" class="site-main outer about-us">
     <div id="about-svg">
-
-
         <div id="about" class="section">
             <div class="container">
                 <h1 class="site-title">about us, feeka</h1>
@@ -36,27 +34,29 @@ into the {body} of the default.hbs template --}}
 
             <div class="row teams-description" id="team-section-small">
                 <div class="col-lg-6 col-sm-12">
-                    <img class="img-fluid" src="{{asset "assets/about/business/MESG.png"}}" alt="business-team">
-                    <h2>business</h2>
+                    <div class="header-team">
+                        <img class="img-fluid" src="{{asset "assets/about/business/MESG.png"}}" alt="business-team">
+                        <h2>business</h2>
+                    </div>
                     <div class="row members">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/business/MafaldaGomes.png"}}" alt="mafalda-gomes">
                             <h6>Mafalda Gomes</h6>
                             <p>CTO</p>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/business/AntonioSilva.png"}}" alt="antonio-silva">
                             <h6>António Silva</h6>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/business/BeatrizRodrigues.png"}}" alt="beatriz-rodrigues">
                             <h6>Beatriz Rodrigues</h6>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/business/JoaoAfonso.png"}}" alt="joao-afonso">
                             <h6>João Afonso</h6>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 offset-lg-0 offset-md-3 col-md-6">
                             <img src="{{asset "assets/about/business/PabloCisnero.png"}}" alt="pablo-cisnero">
                             <h6>Pablo Cisnero</h6>
                         </div>
@@ -64,33 +64,35 @@ into the {body} of the default.hbs template --}}
                 </div>
 
                 <div class="col-lg-6 col-sm-12">
-                    <img class="img-fluid" src="{{asset "assets/about/multimedia/multimedia.png"}}"
-                        alt="multimedia-team">
-                    <h2>multimedia</h2>
+                    <div class="header-team" id="multimedia">
+                        <img class="img-fluid" src="{{asset "assets/about/multimedia/multimedia.png"}}"
+                            alt="multimedia-team">
+                        <h2>multimedia</h2>
+                    </div>
                     <div class="row members">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/multimedia/JoanaMalagueira.png"}}" alt="joana-malagueira">
                             <h6>Joana Malagueira</h6>
                             <p>CMO</p>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/multimedia/BernardoCabral.png"}}" alt="bernardo-cabral">
                             <h6>Bernardo Cabral</h6>
                             <p>CCO</p>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/multimedia/BernardoQuaresma.png"}}" alt="bernardo-quaresma">
                             <h6>Bernardo Quaresma</h6>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/multimedia/DiogoEsteves.png"}}" alt="diogo-esteves">
                             <h6>Diogo Esteves</h6>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/multimedia/EduardoPedro.png"}}" alt="eduardo-pedro">
                             <h6>Eduardo Pedro</h6>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 col-6">
                             <img src="{{asset "assets/about/multimedia/SamuelPereira.png"}}" alt="samuel-pereira">
                             <h6>Samuel Pereira</h6>
                         </div>
@@ -108,34 +110,33 @@ into the {body} of the default.hbs template --}}
         </div>
         <div class="container">
             <div class="row members">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/flow/AfonsoRamos.png"}}" alt="afonso-ramos">
                     <h6>Afonso Ramos</h6>
                     <p>CEO</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/flow/PedroReis.png"}}" alt="pedro-reis">
                     <h6>Pedro Reis</h6>
                     <p>Team Leader</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/flow/AndreBaptista.png"}}" alt="andre-baptista">
                     <h6>Andre Baptista</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/flow/BeatrizBaldaia.png"}}" alt="beatriz-baldaia">
                     <h6>Beatriz Baldaia</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/flow/DiogoDores.png"}}" alt="diogo-dores">
                     <h6>Diogo Dores</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/flow/PedroFerreira.png"}}" alt="pedro-ferreira">
                     <h6>Pedro Ferreira</h6>
                 </div>
-                <div class="col-lg-4 col-md-0"></div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 offset-lg-4 col-md-6 offset-3 col-6">
                     <img src="{{asset "assets/about/flow/RostyslavKhoptly.png"}}" alt="rostyslav-khoptly">
                     <h6>Rostyslav Khoptly</h6>
                 </div>
@@ -151,41 +152,41 @@ into the {body} of the default.hbs template --}}
         </div>
         <div class="container">
             <div class="row members">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/TiagoMagalhaes.png"}}" alt="tiago-magalhaes">
                     <h6>Tiago Magalhães</h6>
                     <p>CTO</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/SofiaSilva.png"}}" alt="sofia-silva">
                     <h6>Sofia Silva</h6>
                     <p>Team Leader</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/AntonioMagalhaes.png"}}" alt="antonio-magalhães">
                     <h6>António Magalhães</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/DanielaJoao.png"}}" alt="daniela-joao">
                     <h6>Daniela João</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/DiogoReis.png"}}" alt="diogo-reis">
                     <h6>Diogo Reis</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/JoseAzevedo.png"}}" alt="jose-azevedo">
                     <h6>José Azevedo</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/LuisSpinola.png"}}" alt="luis-spinola">
                     <h6>Luís Spínola</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/RuiQuaresma.png"}}" alt="rui-quaresma">
                     <h6>Rui Quaresma</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/wisdom/SofiaAlves.png"}}" alt="sofia-alves">
                     <h6>Sofia Alves</h6>
                 </div>
@@ -201,36 +202,36 @@ into the {body} of the default.hbs template --}}
         </div>
         <div class="container">
             <div class="row members">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/FranciscaPauperio.png"}}" alt="francisca-pauperio">
                     <h6>Francisca Paupério</h6>
                     <p>Team Leader</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/MargaridaSilva.png"}}" alt="margarida-silva">
                     <h6>Margarida Silva</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/BernardoBarbosa.png"}}" alt="bernardo-barbosa">
                     <h6>Bernardo Barbosa</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/EdgarCarneiro.png"}}" alt="edgar-carneiro">
                     <h6>Edgar Carneiro</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/JoaoAlmeida.png"}}" alt="joao-almeida">
                     <h6>João Almeida</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/LuisCorreia.png"}}" alt="luis-correia">
                     <h6>Luís Correia</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/MiguelFernandes.png"}}" alt="miguel-fernandes">
                     <h6>Miguel Fernandes</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/vision/RafaelDamasceno.png"}}" alt="rafael-damasceno">
                     <h6>Rafael Damasceno</h6>
                 </div>
@@ -246,28 +247,28 @@ into the {body} of the default.hbs template --}}
         </div>
         <div class="container">
             <div class="row members">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/live/NunoOliveira.png"}}" alt="nuno-oliveira">
                     <h6>Nuno Oliveira</h6>
                     <p>Team Leader</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/live/AntonioPereira.png"}}" alt="antonio-pereira">
                     <h6>António Pereira</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/live/BrunoPinto.png"}}" alt="bruno-pinto">
                     <h6>Bruno Pinto</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/live/PauloCorreia.png"}}" alt="paulo-correia">
                     <h6>Paulo Correia</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/live/PedroAlbano.png"}}" alt="pedro-albano">
                     <h6>Pedro Albano</h6>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <img src="{{asset "assets/about/live/SergioSalgado.png"}}" alt="sergio-salgado">
                     <h6>Sérgio Salgado</h6>
                 </div>
