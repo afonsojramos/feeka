@@ -1,0 +1,194 @@
+#banner-about-us .container-fluid {
+    margin: 10em 0 0 0;
+}
+  
+#about-svg {
+    background-image: url("../about/svgDesktop/Caminho731.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+  
+#about.section .container{
+    margin: auto;
+}
+#about .description {
+    max-width: 50em;
+    margin: auto;
+}
+
+.teams {
+  margin-top: 10em;
+  margin-bottom: 20em;
+  text-align: center;
+  
+  .teams-description h2 {
+    margin-top: 1em;
+  }
+    
+  .members {
+    margin-top: 2em;
+  }
+    
+  .members h6{
+    margin-top: 10px;
+  }
+    
+  .members p{
+    font-family: "Comfortaa", cursive !important;
+    font-size: 12px;
+    color: #E1AE2C;
+  }
+    
+  .team-name {
+    margin-top: 2em;
+    margin-bottom: 0;
+    font-size: 3em;
+    text-transform: none;
+  }
+  
+  .team-project {
+    margin-top: 5px;
+  }
+    
+  .header-team {
+      padding: 10em 0 0 0;
+  }
+}
+    
+.teams.dev#team-flow .header-team{
+  background-image: url("../about/svgDesktop/Caminho724.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.teams.dev#team-wisdom .header-team{
+  background-image: url("../about/svgDesktop/Caminho723.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.teams.dev#team-vision .header-team{
+  background-image: url("../about/svgDesktop/Caminho722.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.teams.dev#team-live .header-team{
+  background-image: url("../about/svgDesktop/Caminho721.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.teams.dev#team-flow h3,
+.teams.dev#team-flow h2,
+.teams.dev#team-flow h6 {
+  color: #3A83E3 !important;
+}
+
+.teams.dev#team-wisdom h3,
+.teams.dev#team-wisdom h2,
+.teams.dev#team-wisdom h6 {
+  color: #C2427D !important;
+}
+
+.teams.dev#team-vision h3,
+.teams.dev#team-vision h2,
+.teams.dev#team-vision h6 {
+  color: #E1AE2C !important;
+}
+
+.teams.dev#team-live h2,
+.teams.dev#team-live h3,
+.teams.dev#team-live h6 {
+  color: #50A28C !important;
+}
+  
+@media (max-width: 992px) {
+  
+    #site-main.about-us {
+      margin-top: 3em;
+    }
+  
+    #about h1.site-title {
+      font-size: 2rem !important;
+    }
+    #about p.description {
+      font-size: 0.8rem !important;
+    }
+    #about.section {
+      margin-bottom: 3em;
+    }
+  
+    .teams .team-name {
+      margin-top: 1em;
+      margin-bottom: 0;
+      font-size: 1.2em;
+      text-transform: none;
+    }
+    .teams .team-project {
+      font-size: 0.8em;
+    }
+    .teams .members h6{
+      font-size: 0.8em;
+      margin-bottom: 5px;
+    }
+  
+    #about-svg {
+      background-image: None;
+      background-repeat: no-repeat;
+      background-size: contain; 
+    }
+  
+    #team-section-small .header-team {
+      padding: 2em 0 0 0;
+      background-image: url("../about/svgMobile/Caminho725.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+    }
+  
+    #team-section-small .header-team#multimedia {
+      background-image: url("../about/svgMobile/Caminho726.svg");
+    }
+  
+    .teams .header-team {
+      padding: 2em 0 0 0;
+    }
+  
+    .section.teams {
+      margin-bottom: 1em;
+      margin-top: 1.5em;
+    }
+  
+    .teams.dev#team-flow .header-team{
+      background-image: url("../about/svgMobile/Caminho727.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+    }
+    
+    .teams.dev#team-wisdom .header-team{
+      background-image: url("../about/svgMobile/Caminho728.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+    }
+    
+    .teams.dev#team-vision .header-team{
+      background-image: url("../about/svgMobile/Caminho729.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+    }
+    
+    .teams.dev#team-live .header-team{
+      background-image: url("../about/svgMobile/Caminho730.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+    }
+}

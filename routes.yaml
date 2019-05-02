@@ -1,5 +1,6 @@
 routes:
   /: index
+  /about/: about
 
 collections:
   /blog/:
