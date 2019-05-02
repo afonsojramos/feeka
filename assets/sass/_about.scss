@@ -15,95 +15,96 @@
     max-width: 50em;
     margin: auto;
 }
-  
+
 .teams {
-    margin-top: 10em;
-    margin-bottom: 20em;
-    text-align: center;
-}
+  margin-top: 10em;
+  margin-bottom: 20em;
+  text-align: center;
   
-.teams .teams-description h2 {
+  .teams-description h2 {
     margin-top: 1em;
-}
-  
-.teams .members {
+  }
+    
+  .members {
     margin-top: 2em;
-}
-  
-.teams .members h6{
+  }
+    
+  .members h6{
     margin-top: 10px;
-}
-  
-.teams .members p{
+  }
+    
+  .members p{
     font-family: "Comfortaa", cursive !important;
     font-size: 12px;
     color: #E1AE2C;
-}
-  
-.teams .team-name {
+  }
+    
+  .team-name {
     margin-top: 2em;
     margin-bottom: 0;
     font-size: 3em;
     text-transform: none;
-}
-.teams .team-project {
+  }
+  
+  .team-project {
     margin-top: 5px;
+  }
+    
+  .header-team {
+      padding: 10em 0 0 0;
+  }
 }
-  
-.teams .header-team {
-    padding: 10em 0 0 0;
-}
-  
+    
 .teams.dev#team-flow .header-team{
-    background-image: url("../about/svgDesktop/Caminho724.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+  background-image: url("../about/svgDesktop/Caminho724.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
-  
+
 .teams.dev#team-wisdom .header-team{
-    background-image: url("../about/svgDesktop/Caminho723.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+  background-image: url("../about/svgDesktop/Caminho723.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
-  
+
 .teams.dev#team-vision .header-team{
-    background-image: url("../about/svgDesktop/Caminho722.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+  background-image: url("../about/svgDesktop/Caminho722.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
-  
+
 .teams.dev#team-live .header-team{
-    background-image: url("../about/svgDesktop/Caminho721.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+  background-image: url("../about/svgDesktop/Caminho721.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
-  
+
 .teams.dev#team-flow h3,
 .teams.dev#team-flow h2,
 .teams.dev#team-flow h6 {
-    color: #3A83E3 !important;
+  color: #3A83E3 !important;
 }
-  
+
 .teams.dev#team-wisdom h3,
 .teams.dev#team-wisdom h2,
 .teams.dev#team-wisdom h6 {
-    color: #C2427D !important;
+  color: #C2427D !important;
 }
-  
+
 .teams.dev#team-vision h3,
 .teams.dev#team-vision h2,
 .teams.dev#team-vision h6 {
-    color: #E1AE2C !important;
+  color: #E1AE2C !important;
 }
-  
+
 .teams.dev#team-live h2,
 .teams.dev#team-live h3,
 .teams.dev#team-live h6 {
-    color: #50A28C !important;
+  color: #50A28C !important;
 }
   
 @media (max-width: 992px) {
