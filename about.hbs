@@ -5,14 +5,8 @@ into the {body} of the default.hbs template --}}
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
 {{> "header"}}
 
-<div id="banner-about-us">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 d-flex justify-content-center">
-                <img class="img-fluid" src="{{asset "assets/about/feekaMain.png"}}" alt="company photo">
-            </div>
-        </div>
-    </div>
+<div id="banner-about-us" class="container-fluid">
+    <img src="{{asset "assets/about/feekaMain.png"}}" alt="company photo">
 </div>
 
 <main id="site-main" class="site-main outer about-us">
