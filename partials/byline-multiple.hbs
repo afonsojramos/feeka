@@ -10,11 +10,11 @@
         <li class="author-list-item">
 
             {{#if profile_image}}
-                <a href="{{url}}" class="moving-avatar">
+                <a class="moving-avatar">
                     <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
                 </a>
             {{else}}
-                <a href="{{url}}" class="moving-avatar author-profile-image">{{> "icons/avatar"}}</a>
+                <a class="moving-avatar author-profile-image">{{> "icons/avatar"}}</a>
             {{/if}}
 
         </li>
