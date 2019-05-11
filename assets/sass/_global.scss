@@ -152,6 +152,18 @@ footer {
     }
 }
 
+a {
+    color: $secondary-color !important;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+
+    &:active {
+        text-decoration: none !important;
+    }
+}
+
 @media (max-width: 991.98px) {
     .navbar {
         padding: 1.2em 2em !important;
