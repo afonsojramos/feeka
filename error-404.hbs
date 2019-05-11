@@ -14,16 +14,14 @@
         </div>
     </main>
 
-    {{#get "posts" limit="3"}}
-    <aside class="outer">
-        <div class="inner">
-            <div class="post-feed">
-                {{#foreach posts}}
+    {{#get "posts" limit="2"}}
+    <div class="inner">
+        <div class="post-feed-tag">
+            {{#foreach posts}}
                 {{> "post-card"}}
-                {{/foreach}}
-            </div>
+            {{/foreach}}
         </div>
-    </aside>
+    </div>
     {{/get}}
 
 </div>
