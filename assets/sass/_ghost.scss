@@ -767,11 +767,9 @@ figure.post-full-image {
 .post-full-content a {
     color: #000;
     word-break: break-word;
-    box-shadow: var(--blue) 0 -1px 0 inset;
 }
 
 .post-full-content a:hover {
-    color: var(--blue);
     text-decoration: none;
 }
 

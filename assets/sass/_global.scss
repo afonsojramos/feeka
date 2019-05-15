@@ -153,13 +153,15 @@ footer {
 }
 
 a {
-    color: $secondary-color !important;
+    color: $primary-color !important;
 
     &:hover {
+        color: $secondary-color !important;
         text-decoration: none !important;
     }
 
     &:active {
+        color: $primary-color !important;
         text-decoration: none !important;
     }
 }
