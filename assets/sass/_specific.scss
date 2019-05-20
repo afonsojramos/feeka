@@ -226,3 +226,9 @@ ul.author-list span h2.post-author {
 .post-feed-tag.error {
     padding-top: 5em;
 }
+
+span.purple-bold {
+    font-family: $comfortaa !important;
+    color: $primary-color !important;
+    font-weight: 1000;
+}
