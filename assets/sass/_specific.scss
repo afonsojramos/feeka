@@ -83,6 +83,10 @@
             left: -15px;
         }
     }
+
+    #about-cards.old:before {
+        opacity: 1;
+    }
 }
 
 #projects {
@@ -160,6 +164,36 @@
             width: 70vw;
             bottom: auto;
             top: -100px;
+        }
+    }
+
+    &.old {
+        .row:nth-child(2):before {
+            background-image: url("../images/old/svgLaranjaDesktop.svg");
+            max-height: 600px;
+    
+            @media (max-width: 576px) {
+                top: -30px;
+            }
+        }
+    
+        .row:nth-child(3):before {
+            background-image: url("../images/old/svgVerdeDesktop.svg");
+            max-height: 800px;
+        }
+    
+        .row:nth-child(4):before {
+            background-image: url("../images/old/svgAzulDesktop.svg");
+            max-height: 800px;
+    
+            @media (max-width: 576px) {
+                top: -150px;
+            }
+        }
+    
+        .row:nth-child(5):before {
+            background-image: url("../images/old/svgRosaDesktop.svg");
+            max-height: 800px;
         }
     }
 }

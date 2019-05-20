@@ -1,0 +1,142 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{> "header"}} 
+
+{{!-- The main content area --}}
+<div id="banner" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 order-lg-1 order-2">
+                <h1>Our bonds overcome challenges.</h1>
+                <p>By combining technology, creativity, business, and good communication, we develop intelligent
+                    solutions for innovative projects.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 order-lg-2 order-1">
+                <img class="img-fluid" src="{{asset "assets/images/old/hero.png"}}" alt="hero illustration">
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div id="about" class="section">
+        <a id="About"></a>
+        <div class="container">
+            <h1>About Us</h1>
+            <p class="description">We are <b>feeka</b>, a Portuguese company that develops technological solutions
+                focused on the client's opportunity with versatility, collaboration, innovation, and creativity. The
+                company, which started its work in 2019, has more than 30 employees and currently has partnerships
+                with companies Sonae BIT, Critical Manufacturing, ZOS Lda and Escola Global.</p>
+
+            <div class="row old" id="about-cards">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img class="img-fluid" src="{{asset "assets/images/old/SoftwareEngineering.svg"}}" alt="software-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineering</h5>
+                            <p class="card-text">Software development with Agile methodology, focused on process
+                                optimization, concept, definition, design, testing, implementation, and quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img class="img-fluid" src="{{asset "assets/images/old/Business.svg"}}" alt="business-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Business</h5>
+                            <p class="card-text">Business management in model canvas, process mapping, key
+                                performance
+                                indicators, business plan, and responsibility matrix.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img class="img-fluid" src="{{asset "assets/images/old/Multimedia.svg"}}" alt="multimedia-image">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimedia</h5>
+                            <p class="card-text">Visual identities, illustration, animation, interfaces, user
+                                experience, social media, video production, interactive narratives, storyboarding
+                                and
+                                digital marketing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="section old">
+        <a id="Projects"></a>
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <img class="img-fluid" src="{{asset "assets/images/old/Quaerere.svg"}}"></img>
+                </div>
+                <div class="col-lg-6 col-md-12 info" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <h2>Quaerere</h2>
+                    <p>Educational application project for students of Escola Global. The school is a reference in
+                        investing in innovative technology for teaching and in this project, students will be able
+                        to learn with quizzes and tutorials as well as teachers with the possibility of planning the
+                        lessons.</p>
+                    <button type="button" class="btn btn-primary">details</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 order-lg-1 order-2 info" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <h2>Out-of-Stock</h2>
+                    <p>A project proposed by Sonae Bit to optimize stock replenishment through a system that detects
+                        empty shelves, in order to avoid the bad appearance created by the lack of exposed products.
+                        The key point of the project was the use of machine learning as well as image analysis for
+                        recognition of the products and their absence.</p>
+                    <button type="button" class="btn btn-primary">details</button>
+                </div>
+                <div class="col-lg-6 col-md-12 order-lg-2 order-1" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <img class="img-fluid" src="{{asset "assets/images/old/Sonae.svg"}}"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <img class="img-fluid" src="{{asset "assets/images/old/CriticalManuf.svg"}}"></img>
+                </div>
+                <div class="col-lg-6 col-md-12 info" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <h2>Electronic Failure Catalogue</h2>
+                    <p>The Critical Manufacturing project is based on the MES product, customized for device
+                        factories, semiconductors, among others. To improve this type of product, it is necessary
+                        that in each step there are errors detections, and so we produce an electronic catalog of
+                        errors/failures in which the worker can select by the machine or cell phone and then obtain
+                        a list with a report of all the bugs that will be sent to the office later.
+                    </p>
+                    <button type="button" class="btn btn-primary">details</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 order-lg-1 order-2 info" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <h2>ZeroZero</h2>
+                    <p>Application that concentrates the streaming information of sporting events. The main purpose
+                        of the application is to enable the user to find out which streaming channels are
+                        transmitting a particular sporting event. We developed the product in partnership with
+                        ZeroZero that provided the necessary API for the execution of the project.
+                    </p>
+                    <button type="button" class="btn btn-primary">details</button>
+                </div>
+                <div class="col-lg-6 col-md-12 order-lg-2 order-1" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500">
+                    <img class="img-fluid" src="{{asset "assets/images/old/ZeroZero.svg"}}"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>

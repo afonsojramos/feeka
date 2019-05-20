@@ -2,6 +2,7 @@ routes:
   /: index
   /about/: about
   /team/: team
+  /old/: old
 
 collections:
   /blog/:
