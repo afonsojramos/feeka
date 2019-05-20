@@ -6,268 +6,59 @@ into the {body} of the default.hbs template --}}
 {{> "header"}}
 
 <div id="banner-about-us" class="container-fluid">
-    <img src="{{asset "assets/about/feekaMain.jpeg"}}" alt="company photo">
+    <img src="{{asset "assets/images/team-banner.png"}}" alt="company photo">
 </div>
 
 <main id="site-main" class="site-main outer about-us">
-    <div id="about-svg">
+    <div id="projects" class="section">
         <div id="about" class="section">
             <div class="container">
                 <h1 class="site-title">about us, feeka</h1>
-                <p class="description">We are <b>feeka</b>, a Portuguese company that develops technological solutions
+                <p class="description">We are <span class="purple-bold">feeka</span>, a Portuguese company that develops technological solutions
                     focused on the client's opportunity with versatility, collaboration, innovation, and creativity. The
                     company, which started its work in 2019, has more than 30 employees and currently has partnerships
                     with companies Sonae BIT, Critical Manufacturing, ZOS Lda and Escola Global.</p>
             </div>
         </div>
-
-        <div id="teams-business-multimedia" class="section teams">
-            <div class="container">
-                <h1 class="site-title">feeka teams</h1>
-            </div>
-
-            <div class="row teams-description" id="team-section-small">
-                <div class="col-lg-6 col-sm-12">
-                    <div class="header-team">
-                        <img class="img-fluid" src="{{asset "assets/about/business/MESG.jpeg"}}" alt="business-team">
-                        <h2>business</h2>
-                    </div>
-                    <div class="row members">
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/business/MafaldaGomes.png"}}" alt="mafalda-gomes">
-                            <h6>Mafalda Gomes</h6>
-                            <p>CBO</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/business/AntonioSilva.png"}}" alt="antonio-silva">
-                            <h6>António Silva</h6>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/business/BeatrizRodrigues.png"}}" alt="beatriz-rodrigues">
-                            <h6>Beatriz Rodrigues</h6>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/business/JoaoAfonso.png"}}" alt="joao-afonso">
-                            <h6>João Afonso</h6>
-                        </div>
-                        <div class="col-lg-4 offset-lg-0 offset-md-3 col-md-6">
-                            <img src="{{asset "assets/about/business/PabloCisnero.png"}}" alt="pablo-cisnero">
-                            <h6>Pablo Cisnero</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <div class="header-team" id="multimedia">
-                        <img class="img-fluid" src="{{asset "assets/about/multimedia/multimedia.jpeg"}}"
-                            alt="multimedia-team">
-                        <h2>multimedia</h2>
-                    </div>
-                    <div class="row members">
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/multimedia/JoanaMalagueira.png"}}" alt="joana-malagueira">
-                            <h6>Joana Malagueira</h6>
-                            <p>CMO</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/multimedia/BernardoCabral.png"}}" alt="bernardo-cabral">
-                            <h6>Bernardo Cabral</h6>
-                            <p>CCO</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/multimedia/BernardoQuaresma.png"}}" alt="bernardo-quaresma">
-                            <h6>Bernardo Quaresma</h6>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/multimedia/DiogoEsteves.png"}}" alt="diogo-esteves">
-                            <h6>Diogo Esteves</h6>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/multimedia/EduardoPedro.png"}}" alt="eduardo-pedro">
-                            <h6>Eduardo Pedro</h6>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <img src="{{asset "assets/about/multimedia/SamuelPereira.png"}}" alt="samuel-pereira">
-                            <h6>Samuel Pereira</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="team-flow" class="section teams dev">
-        <div class="header-team">
-            <img src="{{asset "assets/about/flow/flow.jpeg"}}" alt="flow-team">
-            <h2 class="team-name">dev team - <strong>Flow</strong></h2>
-            <h3 class="team-project">Eletronic Failure Catalogue</h3>
-        </div>
         <div class="container">
-            <div class="row members">
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/flow/AfonsoRamos.png"}}" alt="afonso-ramos">
-                    <h6>Afonso Ramos</h6>
-                    <p>CEO</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 order-lg-1 order-2 info">
+                    <h2>Mission</h2>
+                    <p><span class="purple-bold">feeka</span> wants to create technological solutions towards diverse projects and ideas,
+                        with a unique creative process and design thinking, while also striving for a strong
+                        relationship with clients, making them an active part of the project.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/flow/PedroReis.png"}}" alt="pedro-reis">
-                    <h6>Pedro Reis</h6>
-                    <p>Team Leader</p>
+                <div class="col-lg-6 col-md-12 order-lg-2 order-1">
+                    <img class="img-fluid" src="{{asset "assets/images/mission.png"}}"></img>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/flow/AndreBaptista.png"}}" alt="andre-baptista">
-                    <h6>Andre Baptista</h6>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img class="img-fluid" src="{{asset "assets/images/vision.png"}}"></img>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/flow/BeatrizBaldaia.png"}}" alt="beatriz-baldaia">
-                    <h6>Beatriz Baldaia</h6>
+                <div class="col-lg-6 col-md-12 info">
+                    <h2>Vision</h2>
+                    <p><span class="purple-bold">feeka</span> wants to be an example in the field of technology, and aims to innovate in
+                        the way it thinks and produces projects, making them relevant through time. It in-
+                        tends to be a multitasked company with a global consciousness, versatility and in-
+                        novation in everything it creates.
+                    </p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/flow/DiogoDores.png"}}" alt="diogo-dores">
-                    <h6>Diogo Dores</h6>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 order-lg-1 order-2 info">
+                    <h2>Values</h2>
+                    <p><b>Communication</b>: <span class="purple-bold">feeka</span> excels by its good communication both internally and ex-
+                    ternally, which aims to boost productivity and relationships.</p>
+                    <p><b>Collaboration</b>: Our clients are not only clients, but also partners. We believe that
+                    together we can go further.</p>
+                    <p><b>Creativity & Innovation</b>: Keeping ideas fresh, an open mind and a positive attitude
+                    are important ingredients that spark creativity, versatility and innovation.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/flow/PedroFerreira.png"}}" alt="pedro-ferreira">
-                    <h6>Pedro Ferreira</h6>
-                </div>
-                <div class="col-lg-4 offset-lg-4 col-md-6 offset-3 col-6">
-                    <img src="{{asset "assets/about/flow/RostyslavKhoptly.png"}}" alt="rostyslav-khoptly">
-                    <h6>Rostyslav Khoptly</h6>
+                <div class="col-lg-6 col-md-12 order-lg-2 order-1">
+                    <img class="img-fluid" src="{{asset "assets/images/values.png"}}"></img>
                 </div>
             </div>
         </div>
     </div>
-
-    <div id="team-wisdom" class="section teams dev">
-        <div class="header-team">
-            <img src="{{asset "assets/about/wisdom/Quaerere.jpeg"}}" alt="wisdom-team">
-            <h2 class="team-name">dev team - <strong>Wisdom</strong></h2>
-            <h3 class="team-project">Quaerere</h3>
-        </div>
-        <div class="container">
-            <div class="row members">
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/TiagoMagalhaes.png"}}" alt="tiago-magalhaes">
-                    <h6>Tiago Magalhães</h6>
-                    <p>CTO</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/SofiaSilva.png"}}" alt="sofia-silva">
-                    <h6>Sofia Silva</h6>
-                    <p>Team Leader</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/AntonioMagalhaes.png"}}" alt="antonio-magalhães">
-                    <h6>António Magalhães</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/DanielaJoao.png"}}" alt="daniela-joao">
-                    <h6>Daniela João</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/DiogoReis.png"}}" alt="diogo-reis">
-                    <h6>Diogo Reis</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/JoseAzevedo.png"}}" alt="jose-azevedo">
-                    <h6>José Azevedo</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/LuisSpinola.png"}}" alt="luis-spinola">
-                    <h6>Luís Spínola</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/RuiQuaresma.png"}}" alt="rui-quaresma">
-                    <h6>Rui Quaresma</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/wisdom/SofiaAlves.png"}}" alt="sofia-alves">
-                    <h6>Sofia Alves</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="team-vision" class="section teams dev">
-        <div class="header-team">
-            <img src="{{asset "assets/about/vision/sonae.jpeg"}}" alt="vision-team">
-            <h2 class="team-name">dev team - <strong>Vision</strong></h2>
-            <h3 class="team-project">Out-of-Stock</h3>
-        </div>
-        <div class="container">
-            <div class="row members">
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/FranciscaPauperio.png"}}" alt="francisca-pauperio">
-                    <h6>Francisca Paupério</h6>
-                    <p>Team Leader</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/BernardoBarbosa.png"}}" alt="bernardo-barbosa">
-                    <h6>Bernardo Barbosa</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/EdgarCarneiro.png"}}" alt="edgar-carneiro">
-                    <h6>Edgar Carneiro</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/JoaoAlmeida.png"}}" alt="joao-almeida">
-                    <h6>João Almeida</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/LuisCorreia.png"}}" alt="luis-correia">
-                    <h6>Luís Correia</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/AnaMargarida.png"}}" alt="margarida-silva">
-                    <h6>Margarida Silva</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/MiguelFernandes.png"}}" alt="miguel-fernandes">
-                    <h6>Miguel Fernandes</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/vision/RafaelDamasceno.png"}}" alt="rafael-damasceno">
-                    <h6>Rafael Damasceno</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="team-live" class="section teams dev">
-        <div class="header-team">
-            <img src="{{asset "assets/about/live/live.jpeg"}}" alt="live-team">
-            <h2 class="team-name">dev team - <strong>Live</strong></h2>
-            <h3 class="team-project">zzapp</h3>
-        </div>
-        <div class="container">
-            <div class="row members">
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/live/NunoOliveira.png"}}" alt="nuno-oliveira">
-                    <h6>Nuno Oliveira</h6>
-                    <p>Team Leader</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/live/AntonioPereira.png"}}" alt="antonio-pereira">
-                    <h6>António Pereira</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/live/BrunoPinto.png"}}" alt="bruno-pinto">
-                    <h6>Bruno Pinto</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/live/PauloCorreia.png"}}" alt="paulo-correia">
-                    <h6>Paulo Correia</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/live/PedroAlbano.png"}}" alt="pedro-albano">
-                    <h6>Pedro Albano</h6>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6">
-                    <img src="{{asset "assets/about/live/SergioSalgado.png"}}" alt="sergio-salgado">
-                    <h6>Sérgio Salgado</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </main>
