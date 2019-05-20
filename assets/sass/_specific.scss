@@ -33,7 +33,7 @@
             transition: all ease-out 0.3s;
 
             img {
-                height: 10em;
+                margin: auto;
             }
 
             .card-title {
@@ -60,6 +60,7 @@
         position: absolute;
         margin: auto;
         background-image: url("../svgRoxoDesktop.svg");
+        opacity: 0.5;
         top: 0;
         bottom: 0;
         left: calc((1140px - 100vw)/2 - 15px);
@@ -160,34 +161,6 @@
             bottom: auto;
             top: -100px;
         }
-    }
-
-    .row:nth-child(2):before {
-        background-image: url("../svgLaranjaDesktop.svg");
-        max-height: 600px;
-
-        @media (max-width: 576px) {
-            top: -30px;
-        }
-    }
-
-    .row:nth-child(3):before {
-        background-image: url("../svgVerdeDesktop.svg");
-        max-height: 800px;
-    }
-
-    .row:nth-child(4):before {
-        background-image: url("../svgAzulDesktop.svg");
-        max-height: 800px;
-
-        @media (max-width: 576px) {
-            top: -150px;
-        }
-    }
-
-    .row:nth-child(5):before {
-        background-image: url("../svgRosaDesktop.svg");
-        max-height: 800px;
     }
 }
 
