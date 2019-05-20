@@ -1,6 +1,7 @@
 routes:
   /: index
   /about/: about
+  /team/: team
 
 collections:
   /blog/:
