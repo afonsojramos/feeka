@@ -711,7 +711,6 @@ figure.post-full-image {
     display: block;
     width: 20px;
     height: 200px;
-    background: rgba(39,44,49,0.15);
     filter: blur(5px);
     transform: rotate(-5deg);
 }
@@ -938,24 +937,19 @@ Usage (In Ghost editor):
 
 .post-full-content h2 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 }
 
 .post-full-content h3 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.6rem;
+    font-size: 1.9rem;
     font-weight: 700;
-}
-@media (max-width: 500px) {
-    .post-full-content h3 {
-        font-size: 2rem;
-    }
 }
 
 .post-full-content h4 {
